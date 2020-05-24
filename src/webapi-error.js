@@ -1,8 +1,9 @@
 'use strict';
 
-function WebapiError(message, statusCode) {
+function WebapiError(message, error, statusCode) {
   this.name = 'WebapiError';
   this.message = message || '';
+  this.error = error || {};
   this.statusCode = statusCode;
 }
 
